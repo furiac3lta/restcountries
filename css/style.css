@@ -8,6 +8,7 @@
   --dark-gray-light-input: hsl(0, 0%, 52%);
   --very-light-gray-background: hsl(0, 0%, 98%);
   --just-white: hsl(0, 0%, 100%);
+  --white-gray-background:hsl(0, 2%, 90%);
 }
 
 * {
@@ -19,6 +20,39 @@
 html,
 body {
   font-family: "Nunito Sans", sans-serif;
+  transition: all 250ms ease-in-out;
+}
+
+.bg-body--white{
+  background-color: var(--very-light-gray-background);
+}
+.bg-body--white header {
+  padding: 25px 15px;
+  /* background-color: var(--just-white); */
+  background-color: var(--white-gray-background);
+  color: var(--dark-blue);
+}
+.bg-body--white .search {
+  background-color: var(--white-gray-background);
+  color: var(--dark-blue);
+}
+.bg-body--white .filter__select{
+  background-color: var(--white-gray-background);
+  color: var(--dark-blue);
+}
+.bg-body--white .filter__dropdown{
+  background-color: var(--just-white);
+  color: var(--dark-blue);
+}
+.bg-body--white .card-country{
+  background-color: var(--just-white);
+
+}
+.bg-body--white .card-country__info{
+  color: var(--dark-blue);
+}
+
+.bg-body--dark{
   background-color: var(--very-dark-blue-background);
 }
 
