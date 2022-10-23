@@ -69,7 +69,7 @@ window.addEventListener("load", () => {
     const valorInput = document.getElementById("search");
     valorInput.addEventListener('keyup', e => {
       e.preventDefault();
-      const letra = valorInput.value.toLowerCase();
+      const letra = valorInput.value.toLowerCase().trim();
       console.log(letra)
       const paisFriltrado = arrayData.filter(country => country.name.common.toLowerCase().includes(letra));
 
